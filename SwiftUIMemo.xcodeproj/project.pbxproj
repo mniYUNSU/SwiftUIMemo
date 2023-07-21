@@ -16,6 +16,7 @@
 		0AF2B99C2A6A78F8000246B7 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF2B99B2A6A78F8000246B7 /* Memo.swift */; };
 		0AF2B99E2A6A798B000246B7 /* MemoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF2B99D2A6A798B000246B7 /* MemoStore.swift */; };
 		0AF2B9A12A6A7D77000246B7 /* MemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF2B9A02A6A7D77000246B7 /* MemoCell.swift */; };
+		0AF2B9A32A6A7DDF000246B7 /* ComposeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF2B9A22A6A7DDF000246B7 /* ComposeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		0AF2B99B2A6A78F8000246B7 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		0AF2B99D2A6A798B000246B7 /* MemoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoStore.swift; sourceTree = "<group>"; };
 		0AF2B9A02A6A7D77000246B7 /* MemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCell.swift; sourceTree = "<group>"; };
+		0AF2B9A22A6A7DDF000246B7 /* ComposeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +67,6 @@
 				0AF2B99A2A6A78BF000246B7 /* Memory */,
 				0AF2B9992A6A78B4000246B7 /* CoreData */,
 				0AF2B9842A6A7830000246B7 /* SwiftUIMemoApp.swift */,
-				0AF2B9972A6A7893000246B7 /* MainListView.swift */,
 				0AF2B9882A6A7831000246B7 /* Assets.xcassets */,
 				0AF2B98A2A6A7831000246B7 /* Preview Content */,
 			);
@@ -101,7 +102,9 @@
 		0AF2B99F2A6A7D6A000246B7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0AF2B9972A6A7893000246B7 /* MainListView.swift */,
 				0AF2B9A02A6A7D77000246B7 /* MemoCell.swift */,
+				0AF2B9A22A6A7DDF000246B7 /* ComposeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				0AF2B99E2A6A798B000246B7 /* MemoStore.swift in Sources */,
 				0AF2B9982A6A7893000246B7 /* MainListView.swift in Sources */,
 				0AF2B9912A6A7831000246B7 /* SwiftUIMemo.xcdatamodeld in Sources */,
+				0AF2B9A32A6A7DDF000246B7 /* ComposeView.swift in Sources */,
 				0AF2B9852A6A7830000246B7 /* SwiftUIMemoApp.swift in Sources */,
 				0AF2B99C2A6A78F8000246B7 /* Memo.swift in Sources */,
 			);
