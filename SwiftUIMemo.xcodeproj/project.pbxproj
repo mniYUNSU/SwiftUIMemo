@@ -8,21 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		0AF2B9852A6A7830000246B7 /* SwiftUIMemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF2B9842A6A7830000246B7 /* SwiftUIMemoApp.swift */; };
-		0AF2B9872A6A7830000246B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF2B9862A6A7830000246B7 /* ContentView.swift */; };
 		0AF2B9892A6A7831000246B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AF2B9882A6A7831000246B7 /* Assets.xcassets */; };
 		0AF2B98C2A6A7831000246B7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AF2B98B2A6A7831000246B7 /* Preview Assets.xcassets */; };
 		0AF2B98E2A6A7831000246B7 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF2B98D2A6A7831000246B7 /* Persistence.swift */; };
 		0AF2B9912A6A7831000246B7 /* SwiftUIMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0AF2B98F2A6A7831000246B7 /* SwiftUIMemo.xcdatamodeld */; };
+		0AF2B9982A6A7893000246B7 /* MainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF2B9972A6A7893000246B7 /* MainListView.swift */; };
+		0AF2B99C2A6A78F8000246B7 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF2B99B2A6A78F8000246B7 /* Memo.swift */; };
+		0AF2B99E2A6A798B000246B7 /* MemoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF2B99D2A6A798B000246B7 /* MemoStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0AF2B9812A6A7830000246B7 /* SwiftUIMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AF2B9842A6A7830000246B7 /* SwiftUIMemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIMemoApp.swift; sourceTree = "<group>"; };
-		0AF2B9862A6A7830000246B7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0AF2B9882A6A7831000246B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AF2B98B2A6A7831000246B7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0AF2B98D2A6A7831000246B7 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		0AF2B9902A6A7831000246B7 /* SwiftUIMemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftUIMemo.xcdatamodel; sourceTree = "<group>"; };
+		0AF2B9972A6A7893000246B7 /* MainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListView.swift; sourceTree = "<group>"; };
+		0AF2B99B2A6A78F8000246B7 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
+		0AF2B99D2A6A798B000246B7 /* MemoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +59,11 @@
 		0AF2B9832A6A7830000246B7 /* SwiftUIMemo */ = {
 			isa = PBXGroup;
 			children = (
+				0AF2B99A2A6A78BF000246B7 /* Memory */,
+				0AF2B9992A6A78B4000246B7 /* CoreData */,
 				0AF2B9842A6A7830000246B7 /* SwiftUIMemoApp.swift */,
-				0AF2B9862A6A7830000246B7 /* ContentView.swift */,
+				0AF2B9972A6A7893000246B7 /* MainListView.swift */,
 				0AF2B9882A6A7831000246B7 /* Assets.xcassets */,
-				0AF2B98D2A6A7831000246B7 /* Persistence.swift */,
-				0AF2B98F2A6A7831000246B7 /* SwiftUIMemo.xcdatamodeld */,
 				0AF2B98A2A6A7831000246B7 /* Preview Content */,
 			);
 			path = SwiftUIMemo;
@@ -71,6 +75,24 @@
 				0AF2B98B2A6A7831000246B7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0AF2B9992A6A78B4000246B7 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				0AF2B98D2A6A7831000246B7 /* Persistence.swift */,
+				0AF2B98F2A6A7831000246B7 /* SwiftUIMemo.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		0AF2B99A2A6A78BF000246B7 /* Memory */ = {
+			isa = PBXGroup;
+			children = (
+				0AF2B99B2A6A78F8000246B7 /* Memo.swift */,
+				0AF2B99D2A6A798B000246B7 /* MemoStore.swift */,
+			);
+			path = Memory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,9 +166,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AF2B98E2A6A7831000246B7 /* Persistence.swift in Sources */,
+				0AF2B99E2A6A798B000246B7 /* MemoStore.swift in Sources */,
+				0AF2B9982A6A7893000246B7 /* MainListView.swift in Sources */,
 				0AF2B9912A6A7831000246B7 /* SwiftUIMemo.xcdatamodeld in Sources */,
-				0AF2B9872A6A7830000246B7 /* ContentView.swift in Sources */,
 				0AF2B9852A6A7830000246B7 /* SwiftUIMemoApp.swift in Sources */,
+				0AF2B99C2A6A78F8000246B7 /* Memo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
